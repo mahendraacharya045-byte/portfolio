@@ -20,6 +20,12 @@
   .about p{max-width:65ch;margin:0 0 12px;color:var(--muted)}
   .skills{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0;margin:0}
   .skills li{border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:6px 16px;font-size:.95rem}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+  .card{display:block;padding:20px;border:1px solid var(--line);border-radius:16px;background:var(--panel);color:var(--text);text-decoration:none;transition:border-color .2s,transform .2s}
+  .card:hover{border-color:var(--accent);transform:translateY(-2px)}
+  .card h3{margin:0 0 6px;font-size:1.1rem}
+  .card p{margin:0;color:var(--muted);font-size:.95rem}
+  a:focus-visible{outline:2px solid var(--mint);outline-offset:3px}
 </style>
 </head>
 <body>
@@ -42,6 +48,14 @@
   <ul class="skills">
     <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Fetch and web APIs</li><li>Git and GitHub</li><li>Accessibility</li><li>Web performance</li>
   </ul>
+</section>
+<section id="projects">
+  <h2>Course projects</h2>
+  <div class="cards">
+    <a class="card" href="https://mahendraacharya045-byte.github.io/web-programming/week6/pokemon.html"><h3>Pokemon explorer</h3><p>Week 6: fetches data from a public API and renders it on the page.</p></a>
+    <a class="card" href="https://mahendraacharya045-byte.github.io/web-programming/Week8/Upgraded_registration.html"><h3>Student registration form</h3><p>Week 8: a styled, validated registration form.</p></a>
+    <a class="card" href="https://mahendraacharya045-byte.github.io/web-programming/week9-2/report.html"><h3>Lighthouse optimization report</h3><p>Week 9: performance score improved from 99 to 100.</p></a>
+  </div>
 </section>
 </main>
 </body>
