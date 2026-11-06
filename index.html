@@ -13,10 +13,22 @@
   a{color:var(--accent)}
   h2{margin:0 0 16px;font-size:1.5rem}
   section{padding:40px 0;border-top:1px solid var(--line)}
+  .hero{display:flex;align-items:center;gap:32px;padding:56px 0 40px}
+  .photo{width:160px;height:160px;border-radius:50%;object-fit:cover;border:3px solid var(--mint);background:var(--panel);flex:none}
+  .hero h1{margin:0;font-size:clamp(2rem,6vw,3.2rem);line-height:1.05;letter-spacing:-.03em}
+  .hero p{margin:8px 0 0;color:var(--muted)}
 </style>
 </head>
 <body>
 <main class="wrap">
+<header class="hero">
+  <img class="photo" src="photo.jpg" alt="Portrait of Mahendra Acharya" width="160" height="160">
+  <div>
+    <h1>Mahendra Acharya</h1>
+    <p>Computer Engineering student at Gachon University, 3rd semester</p>
+    <p><a href="https://github.com/mahendraacharya045-byte">GitHub</a> · <a href="https://mahendraacharya045-byte.github.io/web-programming/index.html">Course hub</a></p>
+  </div>
+</header>
 </main>
 </body>
 </html>
